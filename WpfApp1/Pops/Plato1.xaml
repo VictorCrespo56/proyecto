@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1.Pops.Plato1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Pops"
+        mc:Ignorable="d"
+        Title="Plato" Height="387.07" Width="732.56">
+    <Grid>
+        <TextBox x:Name="txtNomPlato" HorizontalAlignment="Left" Height="23" Margin="25,26,0,0" TextWrapping="Wrap" Text="Nombre del plato" VerticalAlignment="Top" Width="120" TabIndex="2147483646" GotMouseCapture="borrarNomPlato"/>
+        <TextBox x:Name="txtCant1" HorizontalAlignment="Left" Height="23" Margin="184,66,0,0" TextWrapping="Wrap" Text="Cantidad (gr)" VerticalAlignment="Top" Width="120" GotMouseCapture="borrartxtCant1"/>
+        <TextBox x:Name="txtCant2" HorizontalAlignment="Left" Height="23" Margin="184,106,0,0" TextWrapping="Wrap" Text="Cantidad (gr)" VerticalAlignment="Top" Width="120" GotMouseCapture="borrartxtCant2"/>
+        <TextBox x:Name="txtCant3" HorizontalAlignment="Left" Height="23" Margin="184,146,0,0" TextWrapping="Wrap" Text="Cantidad (gr)" VerticalAlignment="Top" Width="120" GotMouseCapture="borrartxtCant3"/>
+        <TextBox x:Name="txtCant4" HorizontalAlignment="Left" Height="23" Margin="184,190,0,0" TextWrapping="Wrap" Text="Cantidad (gr)" VerticalAlignment="Top" Width="120" GotMouseCapture="borrartxtCant4"/>
+        <TextBox x:Name="txtCant5" HorizontalAlignment="Left" Height="23" Margin="184,229,0,0" TextWrapping="Wrap" Text="Cantidad (gr)" VerticalAlignment="Top" Width="120" GotMouseCapture="borrartxtCant5"/>
+        <Label Content="Calorias" HorizontalAlignment="Left" Margin="368,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grasas" HorizontalAlignment="Left" Margin="435,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hidratos" HorizontalAlignment="Left" Margin="496,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Azucar" HorizontalAlignment="Left" Margin="568,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Proteinas" HorizontalAlignment="Left" Margin="635,26,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtCal1" HorizontalAlignment="Left" Margin="368,66,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="52" TextAlignment="Center"/>
+        <TextBlock x:Name="txtGrasas1" HorizontalAlignment="Left" Margin="435,66,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="45" TextAlignment="Center"/>
+        <TextBlock x:Name="txtHC1" HorizontalAlignment="Left" Margin="496,66,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="55" TextAlignment="Center"/>
+        <TextBlock x:Name="txtAzucar1" HorizontalAlignment="Left" Margin="568,66,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="46" TextAlignment="Center"/>
+        <TextBlock x:Name="txtProteina1" HorizontalAlignment="Left" Margin="635,66,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="59" TextAlignment="Center"/>
+        <TextBlock x:Name="txtCal2" HorizontalAlignment="Left" Margin="368,106,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="52" TextAlignment="Center"/>
+        <TextBlock x:Name="txtGrasas2" HorizontalAlignment="Left" Margin="435,106,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="45" TextAlignment="Center"/>
+        <TextBlock x:Name="txtHC2" HorizontalAlignment="Left" Margin="496,106,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="55" TextAlignment="Center"/>
+        <TextBlock x:Name="txtAzucar2" HorizontalAlignment="Left" Margin="568,106,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="46" TextAlignment="Center"/>
+        <TextBlock x:Name="txtProteina2" HorizontalAlignment="Left" Margin="635,106,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="59" TextAlignment="Center"/>
+        <TextBlock x:Name="txtCal3" HorizontalAlignment="Left" Margin="368,146,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="52" TextAlignment="Center"/>
+        <TextBlock x:Name="txtGrasas3" HorizontalAlignment="Left" Margin="435,146,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="45" TextAlignment="Center"/>
+        <TextBlock x:Name="txtHC3" HorizontalAlignment="Left" Margin="496,146,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="55" TextAlignment="Center"/>
+        <TextBlock x:Name="txtAzucar3" HorizontalAlignment="Left" Margin="568,146,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="46" TextAlignment="Center"/>
+        <TextBlock x:Name="txtProteina3" HorizontalAlignment="Left" Margin="635,146,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="59" TextAlignment="Center"/>
+        <TextBlock x:Name="txtCal4" HorizontalAlignment="Left" Margin="368,190,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="52" TextAlignment="Center"/>
+        <TextBlock x:Name="txtGrasas4" HorizontalAlignment="Left" Margin="435,190,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="45" TextAlignment="Center"/>
+        <TextBlock x:Name="txtHC4" HorizontalAlignment="Left" Margin="496,190,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="55" TextAlignment="Center"/>
+        <TextBlock x:Name="txtAzucar4" HorizontalAlignment="Left" Margin="568,190,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="46" TextAlignment="Center"/>
+        <TextBlock x:Name="txtProteina4" HorizontalAlignment="Left" Margin="635,190,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="59" TextAlignment="Center"/>
+        <TextBlock x:Name="txtCal5" HorizontalAlignment="Left" Margin="368,229,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="52" TextAlignment="Center"/>
+        <TextBlock x:Name="txtGrasas5" HorizontalAlignment="Left" Margin="435,229,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="45" TextAlignment="Center"/>
+        <TextBlock x:Name="txtHC5" HorizontalAlignment="Left" Margin="496,229,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="55" TextAlignment="Center"/>
+        <TextBlock x:Name="txtAzucar5" HorizontalAlignment="Left" Margin="568,229,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="46" TextAlignment="Center"/>
+        <TextBlock x:Name="txtProteina5" HorizontalAlignment="Left" Margin="635,229,0,0" TextWrapping="Wrap" Text="00.0" VerticalAlignment="Top" Height="23" Width="59" TextAlignment="Center"/>
+        <Button x:Name="btGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="511,298,0,0" VerticalAlignment="Top" Width="80" Height="30"/>
+        <Button x:Name="btCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="614,298,0,0" VerticalAlignment="Top" Width="80" Height="30" Click="BtCancelar_Click"/>
+        <ComboBox x:Name="cbIngre1" HorizontalAlignment="Left" Margin="25,66,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbIngre2" HorizontalAlignment="Left" Margin="25,106,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbIngre3" HorizontalAlignment="Left" Margin="25,147,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbIngre4" HorizontalAlignment="Left" Margin="25,191,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbIngre5" HorizontalAlignment="Left" Margin="25,230,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
