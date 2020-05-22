@@ -35,28 +35,28 @@ namespace WpfApp1
             {
                 DataTable dt = new DataTable(tabla);
                 dt = null;
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
                 return dt;
             }
         }
 
-        public bool Comprobar(string query)
+        public bool Comprobar(string query, string buscado)
         {
-            MessageBox.Show(query);
+            //MessageBox.Show(query);
             try
             {
-                con.Open();
 
-                MySqlCommand comm = new MySqlCommand(query, con);
-                comm.ExecuteReader();
-                MySqlDataReader resultado = comm.ExecuteReader();
-                string numero = "" + resultado;
-                MySqlDataAdapter dataAdp = new MySqlDataAdapter(comm);
-                DataTable dt = new DataTable("USUARIO");
-                dataAdp.Fill(dt);
-                MessageBox.Show("-" + Convert.ToString(dt.Rows[0]["USUARIO"]) + "-");
-                MessageBox.Show("-" + resultado.HasRows);
-                if (resultado.HasRows == true)
+
+                //con.Open();
+
+                //MySqlCommand comm = new MySqlCommand(query, con);
+                //comm.ExecuteReader();
+                //MySqlDataAdapter dataAdp = new MySqlDataAdapter(comm);
+                DataTable dtUser = Rellenar(query, "USUARIO");
+                //dataAdp.Fill(dtUser);
+                string resultado = "" + Convert.ToString(dtUser.Rows[0]["USUARIO"]);
+                //MessageBox.Show(resultado + "- ");
+                if (resultado == buscado)
                 {
                     return true;
                 }
@@ -68,12 +68,12 @@ namespace WpfApp1
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
                 return false;
             }
         }
 
-        public bool Insertar(string query)
+        public bool ModificarBD(string query)
         {
             try
             {
@@ -91,44 +91,6 @@ namespace WpfApp1
                 return false;
             }
 
-        }
-
-        public bool Update(string query)
-        {
-            try
-            {
-                con.Open();
-
-                MySqlCommand comm = new MySqlCommand(query, con);
-                comm.ExecuteNonQuery();
-
-                con.Close();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        public bool Delete(string query)
-        {
-            try
-            {
-                con.Open();
-
-                MySqlCommand comm = new MySqlCommand(query, con);
-                comm.ExecuteNonQuery();
-
-                con.Close();
-                return true;
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
         }
     }
 

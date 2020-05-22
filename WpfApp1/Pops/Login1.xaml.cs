@@ -39,22 +39,17 @@ namespace WpfApp1
             Close();
         }
 
-        private void Cerrar_app(object sender, EventArgs e)
-        {
-            //Environment.Exit(0);
-        }
-
         private void BtEntrar_Click(object sender, RoutedEventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            MessageBox.Show(username + ", " + password);
+            //MessageBox.Show(username + ", " + password);
             Conexion sql = new Conexion();
             string query = "SELECT * FROM USUARIO WHERE USUARIO LIKE '" + username + "'";
-            if(sql.Comprobar(query) == true)
+            if(sql.Comprobar(query, username) == true)
             {
                 query = "SELECT * FROM USUARIO WHERE PASSWORD LIKE '" + password + "'";
-                if(sql.Comprobar(query) == true)
+                if(sql.Comprobar(query, password) == true)
                 {
                     Close();
                 }
@@ -70,6 +65,20 @@ namespace WpfApp1
 
         }
 
-        
+        private void BorrartxtPwd(object sender, MouseEventArgs e)
+        {
+            if (txtPassword.Text == "Contraseña")
+            {
+                txtPassword.Text = "";
+            }
+        }
+
+        private void BorrartxtUser(object sender, MouseEventArgs e)
+        {
+            if (txtUsername.Text == "Usuario")
+            {
+                txtUsername.Text = "";
+            }
+        }
     }
 }
